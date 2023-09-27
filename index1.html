@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Sign Up Form</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+        
+.navbar {
+  width: 100%;
+  background-color: #f40000;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #03ffd9;
+}
+
+@media screen and (max-width: 10px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="http://127.0.0.1:5500/indx.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a  href="http://127.0.0.1:5500/home.html"><i class="fa fa-fw fa-info"></i> About</a>
+    <a href="http://127.0.0.1:5500/contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+    </div>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Login</button>
+      </form>
+  <h1>Login</h1>
+</body>
+</html>
